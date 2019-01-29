@@ -16,7 +16,7 @@ deploy:
   local-dir: _book
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  keep-history: false
+  keep-history: true
   target-branch: master
   on:
     branch: master-docs
