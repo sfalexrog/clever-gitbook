@@ -1,0 +1,1260 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Working with a LED strip on Raspberry 3 · Clever</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Copter Express">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rviz.html" />
+    
+    
+    <link rel="prev" href="camera.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="gloss.html">
+            
+                <a href="gloss.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Assembly
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="assemble_2.html">
+            
+                <a href="assemble_2.html">
+            
+                    
+                    Clever 2 assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="assemble_3.html">
+            
+                <a href="assemble_3.html">
+            
+                    
+                    Clever 3 assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="fpv.html">
+            
+                <a href="fpv.html">
+            
+                    
+                    Installation of FPV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="safety.html">
+            
+                <a href="safety.html">
+            
+                    
+                    Safety instruction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="4in1.html">
+            
+                <a href="4in1.html">
+            
+                    
+                    Connecting 4 in 1 ESCs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="connectortypes.html">
+            
+                <a href="connectortypes.html">
+            
+                    
+                    Types of power connectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="zap.html">
+            
+                <a href="zap.html">
+            
+                    
+                    Blanching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="tb.html">
+            
+                <a href="tb.html">
+            
+                    
+                    Soldering safety
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="test_connection.html">
+            
+                <a href="test_connection.html">
+            
+                    
+                    Using multimeter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="radioerrors.html">
+            
+                <a href="radioerrors.html">
+            
+                    
+                    Possible radio failures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="gps.html">
+            
+                <a href="gps.html">
+            
+                    
+                    Connecting GPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Configuration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="setup.html">
+            
+                <a href="setup.html">
+            
+                    
+                    Initial setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="modes.html">
+            
+                <a href="modes.html">
+            
+                    
+                    Flight modes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="firmware.html">
+            
+                <a href="firmware.html">
+            
+                    
+                    Pixhawk / Pixracer Firmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="px4_parameters.html">
+            
+                <a href="px4_parameters.html">
+            
+                    
+                    PX4 Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="calibratePID.html">
+            
+                <a href="calibratePID.html">
+            
+                    
+                    PID Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Work with Raspberry Pi
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="raspberry.html">
+            
+                <a href="raspberry.html">
+            
+                    
+                    Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="microsd_images.html">
+            
+                <a href="microsd_images.html">
+            
+                    
+                    RPi Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="connection.html">
+            
+                <a href="connection.html">
+            
+                    
+                    RPi Connection to the Pixhawk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="wifi.html">
+            
+                <a href="wifi.html">
+            
+                    
+                    Wi-Fi connection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    SSH access to Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                    Configuring Wi-Fi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="gcs_bridge.html">
+            
+                <a href="gcs_bridge.html">
+            
+                    
+                    Using QGroundControl via Wi-Fi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="rc.html">
+            
+                <a href="rc.html">
+            
+                    
+                    Controlling Clever from a smartphone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="uart.html">
+            
+                <a href="uart.html">
+            
+                    
+                    UART settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="web_video_server.html">
+            
+                <a href="web_video_server.html">
+            
+                    
+                    Viewing images from cameras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="frames.html">
+            
+                <a href="frames.html">
+            
+                    
+                    Coordinate systems (frames)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Coding
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="ros.html">
+            
+                <a href="ros.html">
+            
+                    
+                    ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="mavros.html">
+            
+                <a href="mavros.html">
+            
+                    
+                    MAVROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="simple_offboard.html">
+            
+                <a href="simple_offboard.html">
+            
+                    
+                    Simple OFFBOARD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="aruco.html">
+            
+                <a href="aruco.html">
+            
+                    
+                    Navigation using ArUco markers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="selfcheck.html">
+            
+                <a href="selfcheck.html">
+            
+                    
+                    Automatic check
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="snippets.html">
+            
+                <a href="snippets.html">
+            
+                    
+                    Code examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="camera_frame.html">
+            
+                <a href="camera_frame.html">
+            
+                    
+                    Adjusting the position of the main camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="camera.html">
+            
+                <a href="camera.html">
+            
+                    
+                    Working with the camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.9" data-path="leds.html">
+            
+                <a href="leds.html">
+            
+                    
+                    Working with a LED strip on Raspberry 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="rviz.html">
+            
+                <a href="rviz.html">
+            
+                    
+                    Using rviz and rqt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="sonar.html">
+            
+                <a href="sonar.html">
+            
+                    
+                    Working with the ultrasonic distance gage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="sitl.html">
+            
+                <a href="sitl.html">
+            
+                    
+                    PX4 Simulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="autolaunch.html">
+            
+                <a href="autolaunch.html">
+            
+                    
+                    Software autorun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="arduino.html">
+            
+                <a href="arduino.html">
+            
+                    
+                    Controlling the copter from Arduino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="3g.html">
+            
+                <a href="3g.html">
+            
+                    
+                    Using an external 3G modem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Clever-based projects
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="shield.html">
+            
+                <a href="shield.html">
+            
+                    
+                    Copter spheric guard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="copterhack2018.html">
+            
+                <a href="copterhack2018.html">
+            
+                    
+                    Copter Hack 2018
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="copterhack2017.html">
+            
+                <a href="copterhack2017.html">
+            
+                    
+                    Copter Hack 2017
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Supplementary materials
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="contributing.html">
+            
+                <a href="contributing.html">
+            
+                    
+                    Contribution to Clever
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="esc_firmware.html">
+            
+                <a href="esc_firmware.html">
+            
+                    
+                    Flashing ESCs using BLHeliSuite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="mavlink.html">
+            
+                <a href="mavlink.html">
+            
+                    
+                    MAVLink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="flight_logs.html">
+            
+                <a href="flight_logs.html">
+            
+                    
+                    PX4 Logs and Topics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Textbook
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="lessons.html">
+            
+                <a href="lessons.html">
+            
+                    
+                    Theory and Videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Working with a LED strip on Raspberry 3</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="working-with-a-led-strip-on-raspberry-3"><a name="working-with-a-led-strip-on-raspberry-3" class="plugin-anchor" href="#working-with-a-led-strip-on-raspberry-3"><i class="fa fa-link" aria-hidden="true"></i></a>Working with a LED strip on Raspberry 3</h1>
+<h2 id="connecting-and-determining-the-type-of-the-strip"><a name="connecting-and-determining-the-type-of-the-strip" class="plugin-anchor" href="#connecting-and-determining-the-type-of-the-strip"><i class="fa fa-link" aria-hidden="true"></i></a>Connecting and determining the type of the strip</h2>
+<p>There are two main types of addressed LEDs: WS2812B and WS2812. The control principle is the same, but the timings are different. Locate a LED chip on the strip, and determine how many pins it has: 6 or 4. If it has 6 pins, it is WS2812; if 4, it is WS2812B or its analog SK6812.</p>
+<p><img src="../assets/timing_with_thumbs.png" height="400px" alt="leds"></p>
+<p>Since the control principle is the same, the strips are connected the same way:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">strip</th>
+<th style="text-align:center">Raspberry Pi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">GND</td>
+<td style="text-align:center">GND</td>
+</tr>
+<tr>
+<td style="text-align:center">5V</td>
+<td style="text-align:center">5V</td>
+</tr>
+<tr>
+<td style="text-align:center">DIN</td>
+<td style="text-align:center">GPIO21 or GPIO31</td>
+</tr>
+</tbody>
+</table>
+<p>strip types for denoting the strip in the code are described in <a href="https://github.com/jgarff/rpi_ws281x/blob/master/ws2811.h" target="_blank">file</a>. The main strip types are WS2812_STRIP (for WS2812) and SK6812_STRIP (for WS2812B or SK6812).</p>
+<h2 id="installing-a-library-for-working-with-the-led-strip"><a name="installing-a-library-for-working-with-the-led-strip" class="plugin-anchor" href="#installing-a-library-for-working-with-the-led-strip"><i class="fa fa-link" aria-hidden="true"></i></a>Installing a library for working with the LED strip</h2>
+<p>Define the folder that will contain files of the library, and open the path to this folder in the terminal. By default, you can use the home folder, to move to it, run command:</p>
+<pre><code class="lang-(bash)">cd ~
+</code></pre>
+<p>Clone the repository of library for working with LED strips on Raspberry Pi:</p>
+<pre><code class="lang-(bash)">git clone https://github.com/jgarff/rpi_ws281x.git
+</code></pre>
+<p>Install <a href="https://ru.wikipedia.org/wiki/SCons" target="_blank">Scons</a> and <a href="https://ru.wikipedia.org/wiki/SWIG" target="_blank">Swig</a>:</p>
+<pre><code class="lang-(bash)">sudo apt-get install scons python-dev swig
+</code></pre>
+<p>Compile the library using Scons (the command is to be run inside the folder with the source code of the library):</p>
+<pre><code class="lang-(bash)">cd rpi_ws281x
+scons
+</code></pre>
+<p>Compile the Python wrapper for the library using Swig, and set it for using in your Python scripts.</p>
+<pre><code class="lang-(bash)">cd python
+sudo python ./setup.py build
+sudo python ./setup.py install
+</code></pre>
+<h2 id="sample-program-for-a-led-bang-on-rpi3"><a name="sample-program-for-a-led-bang-on-rpi3" class="plugin-anchor" href="#sample-program-for-a-led-bang-on-rpi3"><i class="fa fa-link" aria-hidden="true"></i></a>Sample program for a LED bang on RPI3</h2>
+<p>In a text editor, open file <code>strandtest.py</code> from folder <code>python/examples</code> (located in the folder with the library):</p>
+<pre><code class="lang-(bash)">nano strandtest.py
+</code></pre>
+<p>Locate the part of the code with strip settings:</p>
+<pre><code class="lang-(bash)"># LED strip configuration:
+LED_COUNT      = 16      # Number of LED pixels.
+LED_PIN        = 18      # GPIO pin connected to the pixels (18 uses PWM!).
+#LED_PIN        = 10      # GPIO pin connected to the pixels (10 uses SPI /dev/spidev0.0).
+LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
+LED_DMA        = 10      # DMA channel to use for generating signal (try 10)
+LED_BRIGHTNESS = 255     # Set to 0 for darkest and 255 for brightest
+LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
+LED_CHANNEL    = 0       # set to &apos;1&apos; for GPIOs 13, 19, 41, 45 or 53
+LED_STRIP = ws.WS2811_STRIP_GRB # Strip type and color ordering
+</code></pre>
+<p>Adjust the settings for working with the strip, and save the file. To avoid interference of the use of the strip with the operation of other devices on Raspberry Pi, it is recommended to use the following settings (the settings are for a strip together with Clever 3):</p>
+<pre><code class="lang-(bash)"># LED strip configuration:
+LED_COUNT      = 30      # Number of LED pixels.
+LED_PIN        = 21      # GPIO pin connected to the pixels.
+LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
+LED_DMA        = 10      # DMA channel to use for generating signal (try 10)
+LED_BRIGHTNESS = 255     # Set to 0 for darkest and 255 for brightest
+LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
+LED_CHANNEL    = 0       # set to &apos;1&apos; for GPIOs 13, 19, 41, 45 or 53
+LED_STRIP = ws.SK6812_STRIP # Strip type and color ordering
+</code></pre>
+<p>Run the test program from root:</p>
+<pre><code class="lang-(bash)">sudo python strandtest.py
+</code></pre>
+<p>The root privileges are required for executing the script, since without them there is no access to the interrupt functions used by the library to work with the strip.</p>
+<h2 id="compatibility-with-ros-and-python"><a name="compatibility-with-ros-and-python" class="plugin-anchor" href="#compatibility-with-ros-and-python"><i class="fa fa-link" aria-hidden="true"></i></a>Compatibility with ROS and Python</h2>
+<p>When the program is run using sudo, the user environment changes, and errors of library import appear, since required paths are missing in the environment. To add paths to Python libraries and ROS packages to the environment, add the following lines to file <code>/etc/sudoers</code> :</p>
+<pre><code class="lang-(bash)">Defaults        env_keep += &quot;PYTHONPATH&quot;
+Defaults        env_keep += &quot;PATH&quot;
+Defaults        env_keep += &quot;ROS_ROOT&quot;
+Defaults        env_keep += &quot;ROS_MASTER_URI&quot;
+Defaults        env_keep += &quot;ROS_PACKAGE_PATH&quot;
+Defaults        env_keep += &quot;ROS_LOCATIONS&quot;
+Defaults        env_keep += &quot;ROS_HOME&quot;
+Defaults        env_keep += &quot;ROS_LOG_DIR&quot;
+</code></pre>
+<h2 id="functions-for-working-with-the-led-strip"><a name="functions-for-working-with-the-led-strip" class="plugin-anchor" href="#functions-for-working-with-the-led-strip"><i class="fa fa-link" aria-hidden="true"></i></a>Functions for working with the LED strip</h2>
+<p>To connect the library and its correct operation, engage the following modules: neopixel - for strip operation, time &#x2013; for delay management, and sys and signal for interruptions and forming the control signal.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> neopixel <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">import</span> time
+<span class="hljs-keyword">import</span> signal
+<span class="hljs-keyword">import</span> sys
+</code></pre>
+<p>To work with the strip, create an object of type <strong>Adafruit_NeoPixel</strong>, and initialize the library:</p>
+<pre><code class="lang-python"><span class="hljs-comment"># Creating a NeoPixel object with specifies configuration</span>
+strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT)
+<span class="hljs-comment"># Initialization of the library, to be run before other functions</span>
+strip.begin()
+</code></pre>
+<p>The main functions that are used to control the strip:</p>
+<ul>
+<li><code>numPixels()</code> - returns the number of pixels in the strip. It is convenient for cyclical control of the entire strip.</li>
+<li><code>setPixelColor(pos, color)</code> &#x2013; sets pixel color to position <code>pos</code>, to color <code>color</code>. The color should be a 24 bit value, where the first 8 bits are red color (red), the next 8 bits &#x2014; green (green), and the last 8 bits &#x2014; blue (blue). To get the <code>color</code> value, you can use function <code>Color(red, green, blue)</code>, which composes this value of 3 components. Each component should be in the range 0 &#x2013; 255, where 0 is no color, and 255 &#x2014; the highest brightness of the component available in the LED module.</li>
+<li><code>setPixelColorRGB(pos, red, green, blue)</code> &#x2013; sets the pixel color at position pos to the color that consists of components <code>red</code>, <code>green</code>, <code>blue</code>. Each component should be in the range 0 &#x2013; 255, where 0 is no color, and 255 &#x2014; the highest brightness of the component available in the LED module.</li>
+<li><code>show()</code> &#x2013; updates the state of the strip. It is only after using it that all software changes are moved to the LED strip.</li>
+</ul>
+<p>Other functions may be detected by running command</p>
+<pre><code class="lang-(bash)">pydoc neopixel
+</code></pre>
+<p>The result of the command:</p>
+<pre><code class="lang-(bash)">    Help on module neopixel:
+
+    NAME
+        neopixel
+
+    DESCRIPTION
+        # Adafruit NeoPixel library port to the rpi_ws281x library.
+        # Author: Tony DiCola (tony@tonydicola.com)
+
+    CLASSES
+        __builtin__.object
+            Adafruit_NeoPixel
+
+        class Adafruit_NeoPixel(__builtin__.object)
+         |  Methods defined here:
+         |
+         |  __del__(self)
+         |
+         |  __init__(self, num, pin, freq_hz=800000, dma=5, invert=False)
+         |      Class to represent a NeoPixel/WS281x LED display.  Num should be the
+         |      number of pixels in the display, and pin should be the GPIO pin connected
+         |      to the display signal line (must be a PWM pin like 18!).  Optional
+         |      parameters are freq, the frequency of the display signal in hertz (default
+         |      800khz), dma, the DMA channel to use (default 5), and invert, a boolean
+         |      specifying if the signal line should be inverted (default False).
+         |
+         |  begin(self)
+         |      Initialize library, must be called once before other functions are
+         |      called.
+         |
+         |  getPixelColor(self, n)
+         |      Get the 24-bit RGB color value for the LED at position n.
+         |
+         |  getPixels(self)
+         |      Return an object which allows access to the LED display data as if
+         |      it were a sequence of 24-bit RGB values.
+         |
+         |  numPixels(self)
+         |      Return the number of pixels in the display.
+         |
+         |  setBrightness(self, brightness)
+         |      Scale each LED in the buffer by the provided brightness.  The brightness
+         |      of 0 is the darkest and 255 is the brightest.  Note that scaling can have
+         |      quantization issues (i.e. blowing out to white or black) if used repeatedly!
+         |
+         |  setPixelColor(self, n, color)
+         |      Set LED at position n to the provided 24-bit color value (in RGB order).
+         |
+         |  setPixelColorRGB(self, n, red, green, blue)
+         |      Set LED at position n to the provided red, green, and blue color.
+         |      Each color component should be a value from 0 to 255 (where 0 is the
+         |      lowest intensity and 255 is the highest intensity).
+         |
+         |  show(self)
+         |      Update the display with the data from the LED buffer.
+         |
+
+    FUNCTIONS
+        Color(red, green, blue)
+            Convert the provided red, green, blue color to a 24-bit color value.
+            Each color component should be a value 0-255 where 0 is the lowest intensity
+            and 255 is the highest intensity.
+</code></pre>
+<h2 id="why-exactly-so-and-is-there-a-different-way"><a name="why-exactly-so-and-is-there-a-different-way" class="plugin-anchor" href="#why-exactly-so-and-is-there-a-different-way"><i class="fa fa-link" aria-hidden="true"></i></a>Why exactly so, and is there a different way?</h2>
+<p>The main types of strips used for Clever 3 are WS2812, WS2812B and SK6812 (analog to WS2812B). They are controlled according to the same principle: for a massif of LEDs in the strip, a data packet at the rate of 24 bits per LED; each LED reads the first 24 bits of received data, and sets the corresponding color, the rest of the data are sent to the next LED in the strip. Zeros and ones are determined by different combinations of the durations of high and low level in the pulse.</p>
+<p>All these strips are supported for library management <a href="https://github.com/jgarff/rpi_ws281x" target="_blank">rpi_ws281x</a>, with that, the DMA module(direct memory access ) of the Raspberri processor, and one of the data channels re used for control: PWM, PCM, or SPI, which guarantees absence of delays in control (and everything is controlled from a multitasking OS, it&apos;s important).</p>
+<p>There are some peculiarities of working with channels, for example, when transmitting data using PWM \ (PWM \), the built-in audio system stops working, when transmitting data via PCM, the use of connected digital audio devices  is blocked\ (with that, the built-in system keeps working \), and when using SPI (by the way, special adjustment of buffer size and Raspberry GPU frequency is required for proper operation) the LED strip blocks all other devices connected to that channel.</p>
+<p>There are some peculiarities of DMA channel selection to control the strip: some channels are used by the system, so using them may lead to unpleasant consequences; for example, using channel 5 destroys the Raspberry file system, since this channel is used for reading / writing to the SD card. Secure channel is No. 10, it is set by default in the library above.</p>
+<p>Therefore, the scenarios of using the LED strip are the following:</p>
+<ol>
+<li>If performance of embedded audio on Raspberry is not important (and we don&apos;t use it, since the audio and the strip will produce nonsense in this case), it is possible to use the PWM channel (for this purpose, you have to connect strip inputs to one of the following Raspberry GPIO ports: 12, 18, 40, or 52 for PWM0 channel and 13, 19, 41, 45, or 53 for PWM1 channel).</li>
+<li>If presence of other devices on the SPI bus is not important, you can control the strip via the SPI (GPIO on Raspberry 10 or 38) channel.
+Here the following settings are required (only for Raspberry Pi 3):<ul>
+<li>increase the size of the data transfer buffer to support long strips, by adding line <code>spidev.bufsiz=32768</code> to file <code>/boot/cmdline.txt</code>;</li>
+<li>set the GPU frequency for proper the frequency of SPI, by adding line <code>core_freq=250</code> to file <code>/boot/config.txt</code>.</li>
+</ul>
+</li>
+<li>If both audio operation and connection of SPI devices in addition to the LED strip is important, the strip may be controlled via the PCM channel (GPIO 21 or 31). With that, no further manipulations with Raspberry is required.</li>
+</ol>
+<p>Based on the above methods of controlling the strip, the best variant that allows controlling the strip, preserve operability of the built-in audio system, and the possibility of connecting all sorts of devices and sensors via the SPI is the controlling via the PCM (GPIO 21) channel using the 10 DMA channel.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="camera.html" class="navigation navigation-prev " aria-label="Previous page: Working with the camera">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rviz.html" class="navigation navigation-next " aria-label="Next page: Using rviz and rqt">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Working with a LED strip on Raspberry 3","level":"1.6.9","depth":2,"next":{"title":"Using rviz and rqt","level":"1.6.10","depth":2,"path":"rviz.md","ref":"rviz.md","articles":[]},"previous":{"title":"Working with the camera","level":"1.6.8","depth":2,"path":"camera.md","ref":"camera.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","richquotes@https://github.com/okalachev/gitbook-plugin-richquotes.git","yametrika","anchors","validate-links","bulk-redirect@https://github.com/okalachev/gitbook-plugin-bulk-redirect.git","sitemap@https://github.com/okalachev/plugin-sitemap.git"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"id":49359238},"validate-links":{"defaultScheme":"https","local":"warn","remote":"disabled"},"youtube":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"sitemap":{"hostname":"https://clever.copterexpress.com"},"bulk-redirect":{"basepath":"","redirectsFile":"redirects.json"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Copter Express","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Clever","language":"en","gitbook":"*","description":"Конструктор квадрокоптера «Клевер»"},"file":{"path":"leds.md","mtime":"2019-05-01T19:27:39.711Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-01T19:28:35.172Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-yametrika/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type='text/javascript'>
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter49359238 = new Ya.Metrika({"id":49359238});
+                } catch(e) { }
+            });
+            var n = d.getElementsByTagName('script')[0],
+                s = d.createElement('script'),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = (d.location.protocol == 'https:' ? 'https:' : 'http:') + '//mc.yandex.ru/metrika/watch.js';
+            if (w.opera == '[object Opera]') {
+                d.addEventListener('DOMContentLoaded', f, false);
+            } else {
+                f();
+            }
+        })(document, window, 'yandex_metrika_callbacks');
+    </script>
+    <noscript>
+        <div>
+            <img src="//mc.yandex.ru/watch/49359238" style="position:absolute; left:-9999px;" alt=""/>
+        </div>
+    </noscript>
+
+    </body>
+</html>
+
